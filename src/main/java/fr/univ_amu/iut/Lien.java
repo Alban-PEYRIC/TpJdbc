@@ -35,4 +35,26 @@ public class Lien {
     public void setNote(Notation note) {
         this.note = note;
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Lien lien = (Lien) o;
+
+        if (module != null ? !module.equals(lien.module) : lien.module != null) return false;
+        if (etudiant != null ? !etudiant.equals(lien.etudiant) : lien.etudiant != null) return false;
+        return note != null ? note.equals(lien.note) : lien.note == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = module != null ? module.hashCode() : 0;
+        result = 31 * result + (etudiant != null ? etudiant.hashCode() : 0);
+        result = 31 * result + (note != null ? note.hashCode() : 0);
+        return result;
+    }
 }
+
