@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by p16002371 on 25/09/17.
  */
-public class TestIdentite {
+public class TestEntite {
     // La requete de test
     static final String req = "SELECT NUM_ET, NOM_ET, PRENOM_ET " +
             "FROM ETUDIANT " +

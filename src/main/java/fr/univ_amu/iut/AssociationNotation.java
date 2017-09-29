@@ -23,24 +23,22 @@ public class AssociationNotation {
     public void supprimerLien(Lien link) {
 
     }
-   public Lien getLien(Module mod, Etudiant etu){
-
-   }
+   public Lien getLien(Module mod, Etudiant etu){return null;}
    public Set<Lien> getLiens(Etudiant etu)
    {
-
+       return null;
    }
    public Set<Lien> getLiens(Module mod)
    {
-
+       return null;
    }
    public Set<Module> getModules(Etudiant etu)
    {
-
+       return null;
    }
     public Set<Etudiant> getEtudiants(Module mod)
     {
-        return;
+        return null;
 
     }
 
